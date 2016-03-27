@@ -1,0 +1,71 @@
+header {
+  nav {
+    background-color: rgb(28, 26, 26);
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      color: rgb(247, 247, 247);
+      padding: 10px 10px;
+      font-size: 9pt;
+
+      &:visited {
+        color: rgb(247, 247, 247);
+      }
+
+      &:hover {
+        color: rgb(18, 115, 190);
+        text-decoration: none;
+      }
+    }
+  }
+
+  #headerbox {
+    background-image: url('../../assets/header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(247, 247, 247);
+    min-height: 350px;
+
+    #introtext {
+      float: left;
+      width: 300px;
+      margin-top: 50px;
+      font-size: 12pt;
+
+      h1 {
+        border-bottom: 1px solid rgb(247, 247, 247);
+        padding-bottom: 5px;
+        font-weight: 100;
+        font-size: 26pt;
+      }
+
+      p {
+        margin: 0;
+        margin-top: 5px;
+      }
+
+      a {
+        margin-top: 30px;
+        color: rgb(96, 183, 250);
+        text-decoration: none;
+        display: block;
+        font-size: 10pt;
+        padding-bottom: 4px;
+        border-bottom: 1px solid rgb(247, 247, 247);
+      }
+    }
+
+    #mobilepart {
+      float: right;
+      margin-top: 30px;
+      width: 309px;
+      height: 235px;
+      background-image: url('../assets/mobile.png');
+      background-repeat: no-repeat;
+      padding: 50px 150px 0px 25px;
+      font-size: 10pt;
+      font-weight: 100;
+    }
+  }
+}

@@ -1,0 +1,422 @@
+.container {
+  max-width: $container-width;
+  padding: 0px 10px;
+  margin: auto;
+}
+
+@import "components/menu.scss";
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(247, 247, 247);
+  background-color: rgb(18, 115, 190);
+  padding: 5px 15px;
+}
+
+.button:hover {
+  background-color: rgb(88, 160, 216);
+}
+
+.clear {
+  clear: both;
+}
+
+#main {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  min-height: 500px;
+}
+
+#main h2 {
+  text-align: center;
+  font-weight: 100;
+  font-size: 33pt;
+}
+
+#main hr {
+  width: 300px;
+  height: 1px;
+  margin-bottom: 40px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+@import "components/tiles.scss";
+@import "components/footer.scss";
+
+/* Portfolio subpage */
+
+#blogcontentFull img {
+  margin: 0px 0px 20px 20px;
+}
+
+h5 {
+  border-bottom: 1px solid rgb(18, 115, 190);
+  color: rgb(18, 115, 190);
+  font-size: 15pt;
+  font-weight: lighter;
+  padding: 0px 0px 10px 0px;
+  margin: 40px 0px 0px 0px
+}
+
+h6 {
+  margin: 30px 0px -5px 0px;
+  border-bottom: 1px solid rgb(18, 115, 190);
+  color: rgb(18, 115, 190);
+  padding: 0px 0px 2px 0px;
+  font-size: 10pt;
+
+}
+
+#blogcontentFull {
+  color: rgb(148, 148, 148);
+  text-align: justify;
+  font-weight: normal;
+  padding-left: 10px;
+}
+
+/* End portfolio subpage */
+
+/* BLOG PAGINA */
+#sidebar {
+  width: 320px;
+  float: right;
+  padding-bottom: 50px;
+}
+
+.sidebarItem {
+  background-color: rgb(238, 238, 238);
+  margin-bottom: 15px;
+  padding: 15px;
+}
+
+.sidebarItem h4 {
+  color: rgb(18, 115, 190);
+  text-align: center;
+  font-size: 14pt;
+  font-weight: 100;
+}
+
+.sidebarItem ul {
+  padding-left: 20px;
+  list-style: square;
+  color: rgb(18, 115, 190);
+}
+
+.sidebarItem a {
+  color: rgb(99, 99, 99);
+  text-decoration: none;
+  font-size: 10pt;
+}
+
+.sidebarItem a:hover {
+  color: rgb(18, 115, 190);
+}
+
+.sidebarItem ul span {
+  float: right;
+  color: rgb(18, 115, 190);
+  font-size: 8pt;
+  margin-top: 5px;
+}
+
+#blogrol {
+  float: left;
+  max-width: 650px;
+  width: 100%;
+}
+
+#blogrol p a {
+  color: rgb(18, 115, 190);
+}
+
+.clearLeft {
+  clear: left;
+}
+
+#blogrol .blogtitle {
+  background-image: url('../assets/square.jpg');
+  background-repeat: no-repeat;
+  background-position: 15px 15px;
+  background-color: rgb(238, 238, 238);
+}
+
+.blogtitle ul {
+  list-style-type: none;
+  display: inline;
+
+}
+
+.blogtitle ul li {
+  padding: 12px 12px 12px 5px;
+  color: rgb(18, 115, 190);
+  font-size: 10pt;
+  float: right;
+}
+
+#blogrol h3 {
+  font-weight: 100;
+  text-align: left;
+  padding: 7px 10px 5px 30px;
+  font-size: 18pt;
+  display: inline-block;
+}
+
+#blogrol .portfoliotitle {
+  background-image: url('../assets/square.jpg');
+  background-repeat: no-repeat;
+  background-position: 15px 15px;
+  background-color: rgb(238, 238, 238);
+  font-weight: 100;
+  text-align: left;
+  padding: 7px 10px 5px 30px;
+  font-size: 18pt;
+}
+
+.portfoliotitle h3 {
+  background-position: 153px 15px;
+  font-weight: 100;
+  text-align: left;
+  font-size: 18pt;
+}
+
+.date {
+  color: rgb(107, 107, 107);
+  margin: 0px;
+  margin-top: 5px;
+  font-size: 10pt;
+}
+
+.blogcontent, .portfoliocontent {
+  color: rgb(141, 141, 141);
+  font-weight: normal;
+  text-align: justify;
+
+}
+
+.portfoliocontent {
+  clear: both;
+  margin-bottom: 10px;
+}
+
+.portfoliodate {
+  color: rgb(18, 115, 190);
+
+  margin-top: 30px;
+  font-size: 10pt;
+}
+
+.portfolioimg {
+  float: right;
+  width: 234px;
+
+  margin-left: 20px;
+}
+
+.date, .blogcontent {
+  margin-left: 10px;
+}
+
+.blogItem {
+  margin-bottom: 80px;
+  display: block;
+}
+
+.comments, .source {
+  display: block;
+  float: right;
+  background-color: rgb(238, 238, 238);
+  padding: 10px 10px;
+  color: rgb(160, 160, 160);
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: normal;
+}
+
+.comments:hover, .source:hover {
+  background-color: rgb(210, 208, 208);
+}
+
+.readMore, .readportfolio {
+  display: inline-block;
+  float: right;
+  background-color: rgb(18, 115, 190);
+  padding: 10px 20px;
+  color: rgb(247, 247, 247);
+  text-decoration: none;
+  font-weight: normal;
+
+}
+
+.readportfolio {
+  padding: 10px 15px;
+  margin-top: 7px;
+  display: inline-block;
+}
+
+.source {
+  float: left;
+  margin-top: -38px;
+  width: 90px;
+  text-align: center;
+}
+
+.readMore:hover {
+  background-color: rgb(88, 160, 216);
+  color: rgb(247, 247, 247);
+}
+
+/* END BLOG */
+
+/* START BLOGPAGE */
+
+#returnToBlog {
+  color: rgb(18, 115, 190) !important;
+}
+
+.blogPage {
+  padding: 10px 20px;
+}
+
+#blogcontentFull {
+  text-align: justify;
+}
+
+#numOfComments {
+  border: 1px solid rgb(238, 238, 238);
+  border-left: 0px;
+  border-right: 0px;
+  padding: 10px 0px;
+  color: rgb(125, 125, 125);
+}
+
+.addComment {
+  float: right;
+  padding: 10px 20px;
+  margin-top: -10px;
+}
+
+#commentsList h4 {
+  margin-top: 40px;
+  padding-bottom: 10px;
+
+}
+
+.comment {
+  text-align: justify;
+  color: rgb(123, 123, 123);
+  margin-bottom: 50px;
+}
+
+.commentDetails {
+  border-top: 1px solid rgb(18, 115, 190);
+  padding: 10px 0px;
+}
+
+.commentDetails span {
+  float: right;
+}
+
+.highlight {
+  background-color: rgb(238, 238, 238);
+}
+
+.commentDate {
+  float: left;
+  width: 60px;
+  background-color: rgb(18, 115, 190);
+  color: rgb(247, 247, 247);
+  padding: 10px;
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+
+.commentDate span {
+  font-size: 32pt;
+  display: block;
+  text-align: center;
+}
+
+.commentText {
+  padding-left: 100px;
+  min-height: 50px;
+}
+
+.commentText b {
+  color: rgb(18, 115, 190);
+}
+
+#doCommentForm input {
+  border: 2px solid rgb(230, 230, 230);
+  padding: 10px 10px;
+  font-size: 14pt;
+  max-width: 360px;
+  width: 100%;
+  margin: 10px 5px;
+}
+
+#doCommentForm textarea {
+  width: 100%;
+  padding: 5px 10px;
+  border: 2px solid rgb(230, 230, 230);
+  margin: 5px;
+  height: 300px;
+  resize: none;
+  font-size: 14pt;
+}
+
+#doCommentForm input[type="submit"] {
+  clear: both;
+  width: 300px;
+  margin-right: 10px;
+  color: white;
+  background-color: rgb(18, 115, 190);
+  border: 0px solid rgb(18, 115, 190);
+  padding: 10px 8px;
+}
+
+#doComment h4 {
+  color: black;
+  margin: 10px 0px;
+}
+
+#commentInfo {
+  display: none;
+}
+
+.highlight {
+  max-width: 650px;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+/* END BLOGPAGE */
+
+/* START CONTACT */
+
+@import "components/contact.scss";
+@import "components/messages.scss";
+
+
+/* END CONTACT */
+
+.errorcode {
+  margin-top: 100px;
+}
+
+.errorPage {
+  text-align: center;
+  font-size: 20pt;
+
+}
+
+.errorPage h2 {
+  margin-bottom: 30px;
+}
+
+.errorPage p {
+  margin-top: 50px;
+}
+

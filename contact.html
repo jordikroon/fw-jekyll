@@ -1,0 +1,22 @@
+---
+layout: default
+title: Contact
+permalink: /contact/
+---
+
+<h2>Contact</h2>
+<hr>
+
+<div class="contact-form">
+    <div class="error" style="display: none;">Your message could not been sent, please fill in all the fields!</div>
+    <div class="success" style="display: none;">Your message has been sent. I'll contact you very soon!</div>
+    <input type='hidden' name='redirect_to' value='{{site.url}}/contact/?success' />
+
+    <form class="contact-form" accept-charset="UTF-8" action="https://getsimpleform.com/messages?form_api_token=f4adacc87552ae53d20d27e09371df53" method="POST">
+        <input type="text" name="full_name" placeholder="Your Name" required="required">
+        <input type="email" name="email" placeholder="Your Email" required="required">
+        <textarea name="message" placeholder="Your message" required="required"></textarea>
+        <input type="hidden" name="utf8" value="✓">
+        <button type="submit">Send message</button>
+    </form>
+</div>

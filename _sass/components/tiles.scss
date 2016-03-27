@@ -1,0 +1,26 @@
+$tiles-count: 3;
+
+.tiles {
+  .tile {
+    float: left;
+    width: 100% / $tiles-count;
+    text-align: center;
+
+    img {
+      position: relative;
+      margin: 0 auto;
+    }
+
+    span {
+      display: none;
+    }
+
+    &:first-child {
+      text-align: left;
+    }
+
+    &:last-child {
+      text-align: right;
+    }
+  }
+}

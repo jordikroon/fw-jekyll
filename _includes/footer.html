@@ -1,0 +1,27 @@
+<footer>
+    <div class="container">
+        <div id="sprofiles">
+            {% if site.github_username %}
+                <a href="http://github.com/{{ site.github_username }}">
+                    <img src="{{ site.baseurl }}/assets/social-github.jpg" title="github" alt="github profile" width="35" height="35"/>
+                </a>
+            {% endif %}
+            {% if site.twitter_username %}
+                <a href="http://twitter.com/jordi12100">
+                    <img src="{{ site.baseurl }}/assets/social-twitter.jpg" title="twitter" alt="twitter profile" width="35" height="35"/>
+                </a>
+            {% endif %}
+            {% if site.facebook_username %}
+                <a href="http://facebook.com/jordi.kroon">
+                    <img src="{{ site.baseurl }}/assets/img/social-facebook.jpg" title="facebook" alt="facebook profile" width="35" height="35"/>
+                </a>
+            {% endif %}
+        </div>
+        <p>
+            &copy; Copyright {{ site.time | date: '%Y' }} - Designed and developed by Jordi Kroon
+        </p>
+    </div>
+
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="{{ site.baseurl }}/js/main.js"></script>
+</footer>

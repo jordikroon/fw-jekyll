@@ -1,0 +1,55 @@
+@import "../mixins/placeholder";
+
+// Form properties
+$form-font-size: 14pt;
+$form-margin-button: 130px;
+
+$placeholder-color: rgb(205, 205, 205);
+$form-input-color: rgb(230, 230, 230);
+$form-button-color: rgb(18, 115, 190);
+
+$form-input-padding: 10px;
+$form-input-width: 460px;
+
+$form-textarea-width: 960px;
+$form-textarea-height: 300px;
+
+$form-button-width: 300px;
+
+.contact-form {
+  @include placeholder {
+    color: $placeholder-color;
+  }
+
+  margin-bottom: $form-margin-button;
+
+  input, textarea {
+    font-size: $form-font-size;
+    border: 2px solid $form-input-color;
+  }
+
+  input {
+    padding: $form-input-padding $form-input-padding;
+    width: $form-input-width;
+    margin: $form-input-padding $form-input-padding/2;
+  }
+
+  textarea {
+    width: $form-textarea-width;
+    padding: $form-input-padding/2 $form-input-padding;
+    margin: $form-input-padding/2;
+    height: $form-textarea-height;
+    resize: none;
+  }
+
+  button {
+    @extend input;
+
+    float: right;
+    width: $form-button-width;
+    margin-right: $form-input-padding;
+    color: white;
+    background-color: $form-button-color;
+    border: 0;
+  }
+}
