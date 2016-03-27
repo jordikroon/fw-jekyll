@@ -16,25 +16,12 @@
         <h4>Github repositories</h4>
 
         <ul>
-            <li>
-                <a href="https://github.com/jordi12100/EasyAdminBundle">Easyadminbundle</a><span>2016/02/17</span>
-            </li>
-
-            <li>
-                <a href="https://github.com/jordi12100/portfolio-v2">Portfolio-v2</a><span>2016/02/15</span>
-            </li>
-
-            <li>
-                <a href="https://github.com/jordi12100/framework">Framework</a><span>2016/02/13</span>
-            </li>
-
-            <li>
-                <a href="https://github.com/jordi12100/Faker">Faker</a><span>2016/01/31</span>
-            </li>
-
-            <li>
-                <a href="https://github.com/jordi12100/zf2">Zf2</a><span>2016/01/30</span>
-            </li>
+            {% assign sorted_repos = site.github.public_repositories | sort:"pushed_at" | reverse %}
+            {% for repository in sorted_repos limit: 10 %}
+                <li>
+                    <a href="{{ repository.html_url }}">{{ repository.name }}</a><span>{{ repository.pushed_at | date: '%Y/%m/%d' }}</span>
+                </li>
+            {% endfor %}
         </ul>
     </div>
 </div>

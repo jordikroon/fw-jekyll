@@ -18,5 +18,8 @@ birthdate: "1994-11-26"
 twitter_username: jordi12100
 github_username:  jordi12100
 
+repository: jordi12100/framework
+gems: ['jekyll-github-metadata']
+
 # Build settings
 markdown: kramdown
