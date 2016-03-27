@@ -5,4 +5,17 @@ layout: extended-default
 <h2>Blog</h2>
 <hr/>
 
-{{ content }}
+<section class="blog">
+    <article>
+        <div>
+            <h3>{{ page.title }}</h3>
+        </div>
+        <time datetime="{{ page.date | date: '%Y/%m/%d' }}">Posted on {{ page.date | date: '%Y/%m/%d' }}</time>
+        <section>
+            {{ content }}
+        </section>
+
+        <div class="clear"></div>
+
+    </article>
+</section>

@@ -1,29 +1,31 @@
-<div id="sidebar">
-
-    <div class="sidebarItem">
-
+<aside>
+    {% if page.date != null %}
+    <section>
+        <a class="return" href="{{site.baseurl}}/blog/">Return to blog</a>
+    </section>
+    {% endif %}
+    <section>
         <h4>Recent Posts</h4>
 
         <ul>
             {% for post in site.categories.blog %}
-                <li>
-                    <a href="{{post.url}}">{{post.title}}</a><span>{{ post.date | date: '%Y/%m/%d' }}</span>
-                </li>
+            <li>
+                <a href="{{post.url}}">{{post.title}}</a><span>{{ post.date | date: '%Y/%m/%d' }}</span>
+            </li>
             {% endfor %}
         </ul>
 
-    </div>
-    <div class="sidebarItem">
-
+    </section>
+    <section>
         <h4>Github repositories</h4>
 
         <ul>
             {% assign sorted_repos = site.github.public_repositories | sort:"pushed_at" | reverse %}
             {% for repository in sorted_repos limit: 10 %}
-                <li>
-                    <a href="{{ repository.html_url }}">{{ repository.name }}</a><span>{{ repository.pushed_at | date: '%Y/%m/%d' }}</span>
-                </li>
+            <li>
+                <a href="{{ repository.html_url }}">{{ repository.name }}</a><span>{{ repository.pushed_at | date: '%Y/%m/%d' }}</span>
+            </li>
             {% endfor %}
         </ul>
-    </div>
-</div>
+    </section>
+</aside>

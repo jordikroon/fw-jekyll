@@ -1,26 +1,25 @@
 ---
-layout: blog
+layout: extended-default
 title: Blog
 permalink: /blog/
 ---
 
-<div id="blogrol">
+<h2>Blog</h2>
+<hr/>
+
+<section class="blog">
     {% for post in site.categories.blog %}
-        <div class="blogItem">
-            <div class="blogtitle">
-                <h3>{{post.title}}</h3>
-            </div>
-
-            <p class="date">
-                Posted on {{ post.date | date: '%Y/%m/%d' }}
-            </p>
-
-            <p class="blogcontent">
-                {{post.content}}
-            </p>
-
-            <a href="{{post.url}}" class="readMore">Read more</a>
-            <div class="clear"></div>
+    <article>
+        <div>
+            <h3>{{post.title}}</h3>
         </div>
+
+        <time datetime="{{ post.date | date: '%Y/%m/%d' }}">Posted on {{ post.date | date: '%Y/%m/%d' }}</time>
+
+        <section>{{post.content}}</section>
+
+        <a href="{{post.url}}" class="readMore">Read more</a>
+        <div class="clear"></div>
+    </article>
     {% endfor %}
-</div>
+</section>

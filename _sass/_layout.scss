@@ -44,12 +44,10 @@
 
 @import "components/tiles.scss";
 @import "components/footer.scss";
+@import "components/sidebar.scss";
+@import "components/blog.scss";
 
 /* Portfolio subpage */
-
-#blogcontentFull img {
-  margin: 0px 0px 20px 20px;
-}
 
 h5 {
   border-bottom: 1px solid rgb(18, 115, 190);
@@ -69,98 +67,12 @@ h6 {
 
 }
 
-#blogcontentFull {
-  color: rgb(148, 148, 148);
-  text-align: justify;
-  font-weight: normal;
-  padding-left: 10px;
-}
-
 /* End portfolio subpage */
 
 /* BLOG PAGINA */
-#sidebar {
-  width: 320px;
-  float: right;
-  padding-bottom: 50px;
-}
-
-.sidebarItem {
-  background-color: rgb(238, 238, 238);
-  margin-bottom: 15px;
-  padding: 15px;
-}
-
-.sidebarItem h4 {
-  color: rgb(18, 115, 190);
-  text-align: center;
-  font-size: 14pt;
-  font-weight: 100;
-}
-
-.sidebarItem ul {
-  padding-left: 20px;
-  list-style: square;
-  color: rgb(18, 115, 190);
-}
-
-.sidebarItem a {
-  color: rgb(99, 99, 99);
-  text-decoration: none;
-  font-size: 10pt;
-}
-
-.sidebarItem a:hover {
-  color: rgb(18, 115, 190);
-}
-
-.sidebarItem ul span {
-  float: right;
-  color: rgb(18, 115, 190);
-  font-size: 8pt;
-  margin-top: 5px;
-}
-
-#blogrol {
-  float: left;
-  max-width: 650px;
-  width: 100%;
-}
-
-#blogrol p a {
-  color: rgb(18, 115, 190);
-}
 
 .clearLeft {
   clear: left;
-}
-
-#blogrol .blogtitle {
-  background-image: url('../assets/square.jpg');
-  background-repeat: no-repeat;
-  background-position: 15px 15px;
-  background-color: rgb(238, 238, 238);
-}
-
-.blogtitle ul {
-  list-style-type: none;
-  display: inline;
-
-}
-
-.blogtitle ul li {
-  padding: 12px 12px 12px 5px;
-  color: rgb(18, 115, 190);
-  font-size: 10pt;
-  float: right;
-}
-
-#blogrol h3 {
-  font-weight: 100;
-  text-align: left;
-  padding: 7px 10px 5px 30px;
-  font-size: 18pt;
-  display: inline-block;
 }
 
 #blogrol .portfoliotitle {
@@ -181,15 +93,7 @@ h6 {
   font-size: 18pt;
 }
 
-.date {
-  color: rgb(107, 107, 107);
-  margin: 0px;
-  margin-top: 5px;
-  font-size: 10pt;
-}
-
 .blogcontent, .portfoliocontent {
-  color: rgb(141, 141, 141);
   font-weight: normal;
   text-align: justify;
 
@@ -212,15 +116,6 @@ h6 {
   width: 234px;
 
   margin-left: 20px;
-}
-
-.date, .blogcontent {
-  margin-left: 10px;
-}
-
-.blogItem {
-  margin-bottom: 80px;
-  display: block;
 }
 
 .comments, .source {
@@ -281,115 +176,6 @@ h6 {
 
 #blogcontentFull {
   text-align: justify;
-}
-
-#numOfComments {
-  border: 1px solid rgb(238, 238, 238);
-  border-left: 0px;
-  border-right: 0px;
-  padding: 10px 0px;
-  color: rgb(125, 125, 125);
-}
-
-.addComment {
-  float: right;
-  padding: 10px 20px;
-  margin-top: -10px;
-}
-
-#commentsList h4 {
-  margin-top: 40px;
-  padding-bottom: 10px;
-
-}
-
-.comment {
-  text-align: justify;
-  color: rgb(123, 123, 123);
-  margin-bottom: 50px;
-}
-
-.commentDetails {
-  border-top: 1px solid rgb(18, 115, 190);
-  padding: 10px 0px;
-}
-
-.commentDetails span {
-  float: right;
-}
-
-.highlight {
-  background-color: rgb(238, 238, 238);
-}
-
-.commentDate {
-  float: left;
-  width: 60px;
-  background-color: rgb(18, 115, 190);
-  color: rgb(247, 247, 247);
-  padding: 10px;
-  text-transform: uppercase;
-  margin-right: 20px;
-}
-
-.commentDate span {
-  font-size: 32pt;
-  display: block;
-  text-align: center;
-}
-
-.commentText {
-  padding-left: 100px;
-  min-height: 50px;
-}
-
-.commentText b {
-  color: rgb(18, 115, 190);
-}
-
-#doCommentForm input {
-  border: 2px solid rgb(230, 230, 230);
-  padding: 10px 10px;
-  font-size: 14pt;
-  max-width: 360px;
-  width: 100%;
-  margin: 10px 5px;
-}
-
-#doCommentForm textarea {
-  width: 100%;
-  padding: 5px 10px;
-  border: 2px solid rgb(230, 230, 230);
-  margin: 5px;
-  height: 300px;
-  resize: none;
-  font-size: 14pt;
-}
-
-#doCommentForm input[type="submit"] {
-  clear: both;
-  width: 300px;
-  margin-right: 10px;
-  color: white;
-  background-color: rgb(18, 115, 190);
-  border: 0px solid rgb(18, 115, 190);
-  padding: 10px 8px;
-}
-
-#doComment h4 {
-  color: black;
-  margin: 10px 0px;
-}
-
-#commentInfo {
-  display: none;
-}
-
-.highlight {
-  max-width: 650px;
-  width: 100%;
-  overflow-x: auto;
-  overflow-y: auto;
 }
 
 /* END BLOGPAGE */

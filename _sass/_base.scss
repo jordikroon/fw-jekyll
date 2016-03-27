@@ -8,6 +8,9 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
+h3 {
+    font-size: 24pt;
+}
 
 body {
     margin: 0px;
@@ -72,7 +75,7 @@ figcaption {
  * Lists
  */
 ul, ol {
-    margin-left: $spacing-unit;
+    margin-left: 0;
 }
 
 li {
