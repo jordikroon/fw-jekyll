@@ -22,10 +22,7 @@ section.blog {
     display: block;
 
     div {
-      background-image: url('../assets/square.jpg');
-      background-repeat: no-repeat;
-      background-position: 15px 15px;
-      background-color: rgb(238, 238, 238);
+      background: rgb(238, 238, 238) url('../assets/square.jpg') no-repeat 15px 15px;
 
       ul {
         list-style-type: none;

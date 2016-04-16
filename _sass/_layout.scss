@@ -47,8 +47,6 @@
 @import "components/sidebar.scss";
 @import "components/blog.scss";
 
-/* Portfolio subpage */
-
 h5 {
   border-bottom: 1px solid rgb(18, 115, 190);
   color: rgb(18, 115, 190);
@@ -166,16 +164,9 @@ h6 {
 
 /* START BLOGPAGE */
 
-#returnToBlog {
-  color: rgb(18, 115, 190) !important;
-}
 
 .blogPage {
   padding: 10px 20px;
-}
-
-#blogcontentFull {
-  text-align: justify;
 }
 
 /* END BLOGPAGE */
